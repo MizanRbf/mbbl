@@ -4,7 +4,8 @@ import { FaHeadphones } from "react-icons/fa";
 const Menubar = () => {
   return (
     <div className="bg-secondary">
-      <div className="flex justify-between  text-white font-bold text-2xl px-4 py-3 gap-3 max-w-[1600px] mx-auto">
+      {/* For Large Device */}
+      <div className=" justify-between  text-white font-bold text-2xl px-4 py-3 gap-3 max-w-[1600px] mx-auto hidden md:flex">
         <div className="flex justify-center w-full gap-8">
           <p>Home</p>
           <p>About</p>

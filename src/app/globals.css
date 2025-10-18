@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap');
+
 @import 'tailwindcss';
 @plugin "daisyui" {
   themes: light --default;
@@ -9,6 +11,13 @@
   --color-primary: #706a00;
   --color-secondary: #ed1c24;
 }
+
+.font1 {
+  font-family: "Permanent Marker", cursive;
+  font-weight: 400;
+  font-style: normal;
+}
+
 
 .button{
   @apply bg-primary px-4 py-2 rounded text-white font-bold cursor-pointer hover:bg-red-800  duration-500;

@@ -8,7 +8,7 @@ const Navbar = () => {
       <Logo></Logo>
       <input
         type="text"
-        className="border border-gray-200 py-3 rounded-sm pl-3 shadow-sm"
+        className="border border-gray-200 py-3 rounded-sm pl-3 shadow-sm outline-secondary"
         placeholder="Search"
       />
       <div className="flex flex-col items-center justify-center">

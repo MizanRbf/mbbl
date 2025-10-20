@@ -3,7 +3,7 @@ import { FaHeadphones } from "react-icons/fa";
 
 const Menubar = () => {
   return (
-    <div className="bg-primary">
+    <div className="bg-primary lg:mt-30 md:mt-25">
       {/* For Large Device */}
       <div className=" justify-between  text-white font-semibold text-2xl px-4 py-3 gap-3 max-w-[1600px] mx-auto hidden md:flex">
         <ul className="flex justify-center w-full lg:gap-20 md:gap-10 *:cursor-pointer *:hover:underline">

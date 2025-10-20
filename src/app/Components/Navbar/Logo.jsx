@@ -7,12 +7,9 @@ const Logo = () => {
     <div className="flex items-center">
       <img src="/assets/logo.png" alt="logo" className="lg:w-25 md:w-20 w-15" />
       <p className="text-xl md:text-4xl lg:text-5xl font-bold text-primary font1">
-        <Typewriter
-          words={["Mizan's Brain Boost Lab", "Welcome to MBBL!"]}
-          loop={true}
-          cursor
-          cursorStyle={"|"}
-        />
+        <p className="font-bold text-lg md:text-2xl lg:text-4xl">
+          Mizan's Brain Boost Lab
+        </p>
       </p>
     </div>
   );

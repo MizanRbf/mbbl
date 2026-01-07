@@ -5,7 +5,7 @@ import "react-responsive-carousel/lib/styles/carousel.min.css";
 
 const Slider = () => {
   return (
-    <div className="w-full aspect-video overflow-hidden">
+    <div className="w-full aspect-video overflow-hidden md:mt-38 mt-20">
       <Carousel autoPlay={true} infiniteLoop={true} showThumbs={false}>
         {/* Slider-1 */}
         <div className="">

@@ -1,3 +1,4 @@
+import Link from "next/link";
 import React from "react";
 import { FaHeadphones } from "react-icons/fa";
 
@@ -7,11 +8,22 @@ const Menubar = () => {
       {/* For Large Device */}
       <div className=" justify-between  text-white font-semibold text-2xl px-4 py-3 gap-3 max-w-[1600px] mx-auto hidden md:flex">
         <ul className="flex justify-center w-full lg:gap-20 md:gap-10 *:cursor-pointer *:hover:underline">
-          <li> Home</li>
-          <li>About</li>
-          <li>Classes</li>
-          <li>Books</li>
-          <li>Blogs</li>
+          <Link href="/">
+            <li>Home</li>
+          </Link>
+          <Link href="/about">
+            <li>About</li>
+          </Link>
+          <Link href="/classes">
+            <li>Classes</li>
+          </Link>
+
+          <Link href="/books">
+            <li>Books</li>
+          </Link>
+          <Link href="/blogs">
+            <li>Blogs</li>
+          </Link>
         </ul>
         <div className="flex items-center gap-2">
           <FaHeadphones />

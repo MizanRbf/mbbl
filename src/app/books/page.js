@@ -2,6 +2,15 @@ import React from "react";
 import BookCard from "../Components/Books/BookCard";
 const books = [
   {
+    book_id: 2,
+    title: "RDBMS",
+    author: "Mizan Rbf",
+    category: "Database",
+    price: 50,
+    published_year: 2015,
+    image: "https://i.ibb.co.com/yccBjB5P/Screenshot-2026-01-11-001358.png",
+  },
+  {
     book_id: 1,
     title: "Clean Code",
     author: "Robert C. Martin",
@@ -10,15 +19,6 @@ const books = [
     published_year: 2008,
     image:
       "https://images-na.ssl-images-amazon.com/images/I/41-sN-mzwKL._SX374_BO1,204,203,200_.jpg",
-  },
-  {
-    book_id: 2,
-    title: "RDBMS",
-    author: "Mizan Rbf",
-    category: "Database",
-    price: 50,
-    published_year: 2015,
-    image: "https://i.ibb.co.com/yccBjB5P/Screenshot-2026-01-11-001358.png",
   },
   {
     book_id: 3,
@@ -62,7 +62,9 @@ const page = () => {
   return (
     <div className="max-w-[1200px] mx-auto px-4 text-center py-10">
       {/* Title */}
-      <p className="text-4xl font-bold text-primary mb-10 underline">Books</p>
+      <p className="text-4xl font-bold text-white mb-10 py-4 rounded-lg bg-gradient-to-b from-primary to-[#283600]">
+        Book Shop
+      </p>
       {/* Books */}
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
         {books.map((book) => (

@@ -1,5 +1,6 @@
 import React from "react";
-
+import { RiShoppingCartLine } from "react-icons/ri";
+import { FiBookOpen } from "react-icons/fi";
 const BookCard = ({ book }) => {
   const { title, image, author, price } = book;
   return (
@@ -12,10 +13,15 @@ const BookCard = ({ book }) => {
       <hr className="text-gray-400 my-3" />
       {/* Button */}
       <div className="w-full flex justify-between">
-        <button className="border px-3 py-1 rounded-sm bg-secondary hover:bg-primary border-none text-lg font-bold text-white">
+        {/* Order Button */}
+        <button className="border px-3 py-3 rounded-sm bg-secondary hover:bg-primary border-none text-xl font-bold text-white flex gap-2">
+          <RiShoppingCartLine className="text-2xl" />
           Order Now
         </button>
-        <button className="border px-3 py-1 rounded-sm bg-primary hover:bg-secondary border-none text-lg font-bold text-white">
+
+        {/* Details Button */}
+        <button className="border px-3 py-3 rounded-sm bg-primary hover:bg-secondary border-none text-xl font-bold text-white flex gap-2">
+          <FiBookOpen className="text-2xl " />
           Details
         </button>
       </div>

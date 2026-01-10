@@ -57,12 +57,13 @@ const books = [
     image: "https://images-na.ssl-images-amazon.com/images/I/81-QB7nDh4L.jpg",
   },
 ];
-
+import { GiBookshelf } from "react-icons/gi";
 const page = () => {
   return (
     <div className="max-w-[1200px] mx-auto px-4 text-center py-10">
       {/* Title */}
-      <p className="text-4xl font-bold text-white mb-10 py-4 rounded-lg bg-gradient-to-b from-primary to-[#283600]">
+      <p className="text-4xl font-bold text-white mb-10 py-4 rounded-lg bg-gradient-to-b from-primary to-[#205700]">
+        <GiBookshelf className="text-2xl" />
         Book Shop
       </p>
       {/* Books */}

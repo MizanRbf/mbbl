@@ -60,13 +60,13 @@ const books = [
 
 const page = () => {
   return (
-    <div className="max-w-[1200px] mx-auto px-4 text-center pt-10">
+    <div className="max-w-[1200px] mx-auto px-4 text-center py-10">
       {/* Title */}
       <p className="text-4xl font-bold text-primary mb-10 underline">Books</p>
       {/* Books */}
-      <div className="grid grid-cols-3 gap-6">
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
         {books.map((book) => (
-          <BookCard key={book.id} book={book}></BookCard>
+          <BookCard key={book.book_id} book={book}></BookCard>
         ))}
       </div>
     </div>

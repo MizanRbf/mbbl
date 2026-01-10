@@ -10,6 +10,15 @@ const BookCard = ({ book }) => {
       <p className="text-xl font-bold mt-4 text-primary">BDT {price}</p>
       {/* Underline */}
       <hr className="text-gray-400 my-3" />
+      {/* Button */}
+      <div className="w-full flex justify-between">
+        <button className="border px-3 py-1 rounded-sm bg-secondary hover:bg-primary border-none text-lg font-bold text-white">
+          Order Now
+        </button>
+        <button className="border px-3 py-1 rounded-sm bg-primary hover:bg-secondary border-none text-lg font-bold text-white">
+          Details
+        </button>
+      </div>
     </div>
   );
 };

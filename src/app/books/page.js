@@ -62,9 +62,9 @@ const page = () => {
   return (
     <div className="max-w-[1200px] mx-auto px-4 text-center pt-10">
       {/* Title */}
-      <p className="text-4xl font-bold text-primary">Books</p>
+      <p className="text-4xl font-bold text-primary mb-10 underline">Books</p>
       {/* Books */}
-      <div>
+      <div className="grid grid-cols-3 gap-6">
         {books.map((book) => (
           <BookCard key={book.id} book={book}></BookCard>
         ))}

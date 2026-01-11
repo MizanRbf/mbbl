@@ -13,10 +13,10 @@ const BookCard = ({ book }) => {
       <hr className="text-gray-400 my-3" />
       {/* Button */}
       <div className="w-full flex justify-between">
-        {/* Order Button */}
+        {/* Download Button */}
         <button className="border px-3 py-3 rounded-sm bg-secondary hover:bg-primary border-none text-xl font-bold text-white flex gap-2">
           <RiShoppingCartLine className="text-2xl" />
-          Order Now
+          Download
         </button>
 
         {/* Details Button */}

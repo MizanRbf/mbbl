@@ -1,5 +1,5 @@
 import React from "react";
-import { RiShoppingCartLine } from "react-icons/ri";
+import { IoMdCloudDownload } from "react-icons/io";
 import { FiBookOpen } from "react-icons/fi";
 const BookCard = ({ book }) => {
   const { title, image, author, price } = book;
@@ -15,7 +15,7 @@ const BookCard = ({ book }) => {
       <div className="w-full flex justify-between">
         {/* Download Button */}
         <button className="border px-3 py-3 rounded-sm bg-secondary hover:bg-primary border-none text-xl font-bold text-white flex gap-2">
-          <RiShoppingCartLine className="text-2xl" />
+          <IoMdCloudDownload className="text-2xl" />
           Download
         </button>
 

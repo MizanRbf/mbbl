@@ -60,12 +60,12 @@ const books = [
 import { GiBookshelf } from "react-icons/gi";
 const page = () => {
   return (
-    <div className="max-w-[1200px] mx-auto px-4 text-center py-10">
+    <div className="max-w-[1200px] mx-auto px-4 py-10">
       {/* Title */}
-      <p className="text-4xl font-bold text-white mb-10 py-4 rounded-lg bg-gradient-to-b from-primary to-[#205700]">
-        <GiBookshelf className="text-2xl" />
-        Book Shop
-      </p>
+      <div className=" mb-10 py-4 rounded-lg bg-gradient-to-b from-primary to-[#1c4703] flex justify-center gap-2">
+        <GiBookshelf className=" text-white text-4xl" />
+        <p className="text-4xl font-bold text-white">BookVault</p>
+      </div>
       {/* Books */}
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
         {books.map((book) => (

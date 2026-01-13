@@ -2,6 +2,7 @@ import Navbar from "./Components/Navbar/Navbar";
 import Menubar from "./Components/Menubar/Menubar";
 import Slider from "./Components/Slider/Slider";
 import Footer from "./Components/Footer/Footer";
+import Books from "./Components/Home/Books";
 
 export default function Home() {
   return (
@@ -14,7 +15,9 @@ export default function Home() {
       </header>
 
       {/* Main */}
-      <main></main>
+      <main>
+        <Books></Books>
+      </main>
 
       {/* Footer */}
       <footer>
